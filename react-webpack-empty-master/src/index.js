@@ -47,6 +47,4 @@ class Counter extends Component {
     }
 }
 
-
-
 ReactDOM.render(<Counter />, document.querySelector("#root"));
