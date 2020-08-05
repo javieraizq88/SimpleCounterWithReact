@@ -35,16 +35,28 @@ class Counter extends Component {
 
     render () { 
         return (
-            <div className= "row container justify-content-center contenedorGrande" >
-                <div className="col reloj"><i className="far fa-clock"></i></div>
-                <div className="col weeks">{parseInt(this.state.a /10000)}</div>
-                <div className="col days">{parseInt(this.state.a /1000)}</div>
-                <div className="col hours">{parseInt(this.state.a /100)}</div>
-                <div className="col minuts">{parseInt(this.state.a /10)}</div>
-                <div className="col seconds">{this.state.a % 10}</div>
+            <div id="simpleCounter">
+            <div className="container">
+            <div className= "row container justify-content-center" >
+                <div className="col  reloj"><i className="far fa-clock"></i></div>
+                <div className="col bg-primary minuts"><strong> x 10.000 segundos </strong> </div>
+                <div className="col bg-secondary  minuts"><strong>x 1.000 segundos </strong></div>
+                <div className="col bg-danger minuts"><strong>x 100 segundos </strong></div>
+                <div className="col bg-warning minuts"><strong>x 10 segundos</strong></div>
+                <div className="col bg-success seconds"><strong>x 1 segundo</strong></div>
+            </div>
+            <div className= "container-2 row container justify-content-center" >
+                <div className="col reloj1"><strong>Tiempo</strong></div>
+                <div className="col tiempo">{parseInt(this.state.a /604800)}</div>
+                <div className="col tiempo">{parseInt(this.state.a /86400)}</div>
+                <div className="col tiempo">{parseInt(this.state.a /600)}</div>
+                <div className="col tiempo">{parseInt(this.state.a /60)}</div>
+                <div className="col tiempo2">{this.state.a % 60}</div>
+            </div>
+            </div>
             </div>
         )
     }
 }
 
-ReactDOM.render(<Counter />, document.querySelector("#root"));
+export default Counter;

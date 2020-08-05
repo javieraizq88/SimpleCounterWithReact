@@ -1,4 +1,44 @@
 body {
-    background-color: azure;
+    padding-top: 100px;
 }
 
+.reloj1,
+.reloj,
+.minuts,
+.tiempo,
+.tiempo2,
+.seconds{
+    border-right: 0px;
+    text-align: center;
+    border: solid 1px;
+    font-size: 20px;
+}
+
+.minuts,
+.tiempo,
+.reloj1,
+.reloj{
+    border-right: none;
+}
+.reloj{
+    padding-top: 15px;
+}
+.reloj1{
+    border-top: none;
+}
+
+.tiempo,
+.tiempo2{
+    border-top: none;
+}
+
+.container-2{
+    height: 60px;
+}
+
+
+.reloj1,
+.tiempo,
+.tiempo2{
+    padding-top: 15px;
+}
